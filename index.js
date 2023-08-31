@@ -47,3 +47,20 @@ function loadData(){
     listContainer.innerHTML=localStorage.getItem("data");
 }
 loadData();
+let valueForImg=1;
+let row2=document.querySelector(".row2");
+row2.addEventListener("click",function(e){
+    if(e.target.tagName==="IMG"){
+        if(valueForImg==1){
+            console.log(e)
+            e.target.src="img/arrow-down.png"
+            document.querySelector("#ToDos").style.display="none";
+        }
+        else{
+            e.target.src="img/arrow-up.png"
+            document.querySelector("#ToDos").style.display="inherit";
+        }
+        valueForImg=1-valueForImg;
+       
+    }
+})
