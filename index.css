@@ -10,6 +10,15 @@ font-size: 20px;
    min-height: 100vh;
    padding: 10px;
 }
+.row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row2 img{
+    margin-right: 65px;
+    height:30px;
+}
 .mainContainer{
     margin: 100px auto 40px;
     max-width: 600px;
